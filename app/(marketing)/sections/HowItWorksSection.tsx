@@ -22,7 +22,7 @@ export function HowItWorksSection() {
       <div className="container-app">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
           <span className="text-caption font-semibold uppercase tracking-widest text-primary-600 mb-3 block">Simple Process</span>
-          <h2 className="text-h1 text-neutral-900 dark:text-white mb-4">How Hometown Hub Works</h2>
+          <h2 className="text-h1 text-neutral-900 dark:text-white mb-4">How Zashub Works</h2>
           <p className="text-body-lg text-neutral-500 max-w-2xl mx-auto">Three simple steps to become part of your local community</p>
         </motion.div>
         <div className="grid md:grid-cols-3 gap-8">

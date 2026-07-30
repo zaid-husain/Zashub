@@ -22,7 +22,7 @@ export const connectDB = async () => {
 
     // Production-grade connection options
     const conn = await mongoose.connect(env.MONGODB_URI, {
-      dbName: process.env.DATABASE_NAME || 'hometown-hub',
+      dbName: process.env.DATABASE_NAME || 'zashub',
       serverSelectionTimeoutMS: 5000, // Timeout after 5s instead of 30s
       socketTimeoutMS: 45000, // Close sockets after 45 seconds of inactivity
       maxPoolSize: 50, // Maintain up to 50 socket connections

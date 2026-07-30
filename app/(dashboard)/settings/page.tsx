@@ -111,7 +111,7 @@ function SecuritySettings() {
           await logout();
           router.push('/login');
         }}
-        title="Log out of Hometown Hub"
+        title="Log out of Zashub"
         message="Are you sure you want to log out?"
         confirmText="Log out"
         cancelText="Cancel"

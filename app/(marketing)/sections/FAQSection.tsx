@@ -4,11 +4,11 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
 const faqs = [
-  { q: 'What is Hometown Hub?', a: 'Hometown Hub is a hyperlocal community platform that connects people from the same city, village, or neighborhood. Share updates, organize events, and build genuine connections with your neighbors.' },
-  { q: 'Is Hometown Hub free to use?', a: 'Yes! Hometown Hub is completely free for individuals and communities. We may introduce premium features for large organizations in the future, but the core experience will always be free.' },
-  { q: 'How do I create a community?', a: 'Simply sign up, click "Create Community", fill in your community details (name, location, description), and invite your neighbors. You can create public or private communities.' },
-  { q: 'How is my data protected?', a: 'We use industry-standard encryption, secure authentication with JWT tokens, and follow strict data privacy practices. Your personal data is never sold to third parties.' },
-  { q: 'Can I moderate my community?', a: 'Absolutely! Community owners can appoint moderators, set community rules, approve/reject members and posts, and manage reports. Full moderation tools are included.' },
+  { q: 'What is Zashub?', a: 'Zashub is a modern local community platform where people can discover places, events, businesses, services, jobs, local updates, and connect with their hometown community through a beautiful and fast experience.' },
+  { q: 'Is Zashub free to use?', a: 'Yes! Zashub is completely free for individuals and local communities. Core features for discovering events, connecting locally, and interacting with neighbor groups will always remain free.' },
+  { q: 'How do I create a community on Zashub?', a: 'Simply sign up, click "Create Community", fill in your community details (name, location, description), and invite your neighbors. You can create public or private communities.' },
+  { q: 'How is my data protected on Zashub?', a: 'We use industry-standard encryption, secure authentication with JWT tokens, and follow strict data privacy practices. Your personal data is never sold to third parties.' },
+  { q: 'Can I moderate my community on Zashub?', a: 'Absolutely! Community owners can appoint moderators, set community rules, approve/reject members and posts, and manage reports. Full moderation tools are included.' },
 ];
 
 function FAQItem({ faq, index }: { faq: { q: string; a: string }; index: number }) {

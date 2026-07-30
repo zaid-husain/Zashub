@@ -5,6 +5,7 @@ import { QueryProvider } from '@/providers/query-provider';
 import AuthProvider from '@/components/providers/AuthProvider';
 import { SocketProvider } from '@/lib/providers/SocketProvider';
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
+import { JsonLdSchema } from '@/components/seo/JsonLdSchema';
 import './globals.css';
 
 const inter = Inter({
@@ -14,20 +15,69 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: { default: 'Hometown Hub — Digital Community Platform', template: '%s | Hometown Hub' },
-  description: 'Connect with your hometown community. Share updates, organize events, preserve local culture, and build genuine connections with neighbors.',
-  keywords: ['community', 'hometown', 'local', 'neighbors', 'events', 'social', 'hyperlocal'],
-  authors: [{ name: 'Hometown Hub' }],
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://zashub.vercel.app'),
+  title: {
+    default: 'Zashub – Discover Places, Events & Local Community',
+    template: '%s | Zashub',
+  },
+  description:
+    'Discover nearby places, businesses, events, jobs, services and local updates with Zashub. Connect with your hometown community through one modern platform.',
+  keywords: [
+    'Zashub',
+    'local community',
+    'community app',
+    'hometown',
+    'city guide',
+    'local events',
+    'business directory',
+    'local marketplace',
+    'nearby services',
+    'local jobs',
+    'restaurants',
+    'travel',
+    'community platform',
+    'India',
+    'discover local',
+  ],
+  authors: [{ name: 'Zashub', url: 'https://zashub.vercel.app' }],
+  creator: 'Zashly',
+  publisher: 'Zashly',
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
-    title: 'Hometown Hub — Digital Community Platform',
-    description: 'Connect with your hometown community. Share updates, organize events, and build genuine connections.',
+    title: 'Zashub – Discover Places, Events & Local Community',
+    description:
+      'Discover nearby places, businesses, events, jobs, services and local updates with Zashub. Connect with your hometown community through one modern platform.',
     type: 'website',
-    siteName: 'Hometown Hub',
+    url: 'https://zashub.vercel.app',
+    siteName: 'Zashub',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Zashub – Discover Places, Events & Local Community',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hometown Hub — Digital Community Platform',
-    description: 'Connect with your hometown community.',
+    title: 'Zashub – Discover Places, Events & Local Community',
+    description:
+      'Discover nearby places, businesses, events, jobs, services and local updates with Zashub. Connect with your hometown community through one modern platform.',
+    images: ['/og-image.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
@@ -40,6 +90,12 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={inter.variable} data-scroll-behavior="smooth" suppressHydrationWarning>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <JsonLdSchema />
+      </head>
       <body className="font-sans antialiased">
         <QueryProvider>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
@@ -69,3 +125,4 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+

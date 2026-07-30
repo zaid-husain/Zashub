@@ -46,7 +46,7 @@ export function TimelineSection() {
 
           <motion.div style={{ opacity: opacity4, y: y4 }}>
             <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-accent-400 tracking-tight">
-              Hometown Hub brings it back.
+              Zashub brings it back.
             </h2>
           </motion.div>
         </div>

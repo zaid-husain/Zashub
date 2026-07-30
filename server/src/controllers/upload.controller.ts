@@ -9,7 +9,7 @@ export const uploadImage = async (req: Request, res: Response, next: NextFunctio
     }
 
     const uploadStream = cloudinary.uploader.upload_stream(
-      { folder: 'hometown_hub' },
+      { folder: 'zashub' },
       (error, result) => {
         if (error) {
           return next(new AppError('Image upload failed', 500));

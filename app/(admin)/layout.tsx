@@ -57,7 +57,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           </div>
           <div>
             <h2 className="font-bold text-neutral-900 dark:text-white leading-tight">Admin Portal</h2>
-            <p className="text-xs text-neutral-500 font-medium tracking-wide uppercase">Hometown Hub</p>
+            <p className="text-xs text-neutral-500 font-medium tracking-wide uppercase">Zashub Admin</p>
           </div>
         </div>
 

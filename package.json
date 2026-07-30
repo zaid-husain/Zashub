@@ -1,8 +1,8 @@
 {
-  "name": "hometown-hub",
+  "name": "zashub",
   "version": "1.0.0",
   "private": true,
-  "description": "Hometown Hub — Digital Community Platform",
+  "description": "Zashub – Discover Places, Events & Local Community",
   "scripts": {
     "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
     "dev:client": "next dev --turbopack -p 3000",

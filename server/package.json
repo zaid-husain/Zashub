@@ -1,7 +1,7 @@
 {
-  "name": "hometown-hub-server",
+  "name": "zashub-server",
   "version": "1.0.0",
-  "description": "Express backend for Hometown Hub",
+  "description": "Express backend for Zashub",
   "main": "dist/app.js",
   "scripts": {
     "start": "node dist/app.js",

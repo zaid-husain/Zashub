@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import { env } from './src/config/env';
 
 async function test() {
-  await mongoose.connect(env.MONGODB_URI, { dbName: process.env.DATABASE_NAME || 'hometown-hub' });
+  await mongoose.connect(env.MONGODB_URI, { dbName: process.env.DATABASE_NAME || 'zashub' });
   const db = mongoose.connection.db!;
   const collections = await db.listCollections().toArray();
   console.log('Collections in DB:', collections.map(c => c.name));

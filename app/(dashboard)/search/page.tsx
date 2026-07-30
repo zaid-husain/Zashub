@@ -18,7 +18,7 @@ export default function SearchResultsPage() {
         <div className="w-24 h-24 rounded-full bg-neutral-100 dark:bg-neutral-900 flex items-center justify-center mb-6">
           <Search className="w-10 h-10 text-neutral-400 dark:text-neutral-600" />
         </div>
-        <h2 className="text-2xl font-extrabold text-neutral-900 dark:text-white mb-3">Search Hometown Hub</h2>
+        <h2 className="text-2xl font-extrabold text-neutral-900 dark:text-white mb-3">Search Zashub</h2>
         <p className="text-center max-w-md text-[15px] leading-relaxed">Type something in the search bar above to find people, communities, events, and posts.</p>
       </div>
     );

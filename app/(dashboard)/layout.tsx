@@ -70,10 +70,10 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         <div className="p-6">
           <Link href="/feed" className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-lg bg-primary-600 flex items-center justify-center text-white font-bold text-xl">
-              H
+              Z
             </div>
             <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-accent-500">
-              Hometown Hub
+              Zashub
             </span>
           </Link>
         </div>
@@ -132,6 +132,17 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
               Log out
             </button>
           </div>
+
+          <div className="pt-3 mt-2 border-t border-neutral-200/40 dark:border-neutral-800/40 text-center">
+            <a
+              href="https://zashly.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-[11px] font-medium text-neutral-500 hover:text-primary-600 dark:hover:text-white opacity-80 hover:opacity-100 transition-opacity"
+            >
+              <span className="text-amber-500">⚡</span> Powered by <span className="font-semibold text-neutral-700 dark:text-neutral-200">Zashly</span>
+            </a>
+          </div>
         </div>
       </aside>
 
@@ -142,7 +153,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             {/* Mobile Logo */}
             <div className="flex items-center gap-2 md:hidden">
               <div className="w-8 h-8 rounded-lg bg-primary-600 flex items-center justify-center text-white font-bold text-xl">
-                H
+                Z
               </div>
             </div>
             
@@ -209,12 +220,16 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         isOpen={isLogoutModalOpen}
         onClose={() => setIsLogoutModalOpen(false)}
         onConfirm={confirmLogout}
-        title="Log out of Hometown Hub"
+        title="Log out of Zashub"
         message="Are you sure you want to log out? You'll need to log back in to access your communities and messages."
         confirmText="Log out"
         cancelText="Cancel"
         isDestructive={true}
       />
+    </div>
+  );
+}
+
     </div>
   );
 }

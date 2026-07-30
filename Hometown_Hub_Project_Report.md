@@ -1,4 +1,4 @@
-# Internship Project Report: Hometown Hub
+# Internship Project Report: Zashub
 
 **Submitted By:**  
 Zaid Husain
@@ -7,7 +7,7 @@ Zaid Husain
 Unified Mentor
 
 **Project Title:**  
-Hometown Hub – Digital Community Platform
+Zashub – Digital Community Platform
 
 **Technology Stack:**  
 Next.js, TypeScript, Tailwind CSS, Node.js, Express.js, MongoDB Atlas, JWT Authentication, Google OAuth, Cloudinary, Socket.IO, Vercel
@@ -16,7 +16,7 @@ Next.js, TypeScript, Tailwind CSS, Node.js, Express.js, MongoDB Atlas, JWT Authe
 
 ## 1. Introduction
 
-In the modern digital landscape, generalized social networks often fail to foster genuine local connections. **Hometown Hub** was conceptualized and developed to bridge this gap. It is a premium, full-stack digital community platform designed specifically to connect individuals based on their geographical roots, shared local interests, and real-world events. 
+In the modern digital landscape, generalized social networks often fail to foster genuine local connections. **Zashub** was conceptualized and developed to bridge this gap. It is a premium, full-stack digital community platform designed specifically to connect individuals based on their geographical roots, shared local interests, and real-world events. 
 
 Developed during the Unified Mentor Internship Program, this project serves as a testament to building scalable, production-ready web applications. The platform acts as a central digital town square where users can discover thriving local communities, engage in real-time conversations, coordinate local events, and share content seamlessly with their network. 
 
@@ -55,7 +55,7 @@ The primary objective of this internship project was to architect and implement 
 
 ## 3. System Architecture & Technical Implementation
 
-To ensure high availability and scalability, Hometown Hub utilizes a **Hybrid Deployment Architecture**, explicitly separating concerns between the client and the server.
+To ensure high availability and scalability, Zashub utilizes a **Hybrid Deployment Architecture**, explicitly separating concerns between the client and the server.
 
 ### 3.1 The Frontend (Client Layer)
 Built on the bleeding-edge **Next.js (App Router)** framework and strictly typed with **TypeScript**.
@@ -93,7 +93,7 @@ A custom-built **Node.js** and **Express.js** RESTful API designed to handle com
 
 ## 5. Learning Outcomes
 
-Throughout the intensive development cycle of Hometown Hub during the Unified Mentor Internship Program, several critical engineering and professional milestones were achieved:
+Throughout the intensive development cycle of Zashub during the Unified Mentor Internship Program, several critical engineering and professional milestones were achieved:
 
 1. **Full-Stack Orchestration:** Mastered the complex integration of a modern React-based frontend with a custom, secure Express backend.
 2. **Real-Time Data Synchronization:** Gained highly practical, hands-on experience in establishing, securing, and managing persistent bi-directional communication channels using Socket.IO.
@@ -105,7 +105,7 @@ Throughout the intensive development cycle of Hometown Hub during the Unified Me
 
 ## 6. Future Scope
 
-While Hometown Hub is fully functional and production-ready, future iterations of the platform could include:
+While Zashub is fully functional and production-ready, future iterations of the platform could include:
 - **AI-Powered Content Moderation:** Implementing machine learning APIs to automatically detect and flag inappropriate content or toxic behavior in community chats.
 - **Live Voice & Video Rooms:** Expanding the Socket.IO implementation to support WebRTC for live community town halls.
 - **Monetization & Ticketing:** Allowing community leaders to sell tickets for premium local events directly through the platform using Stripe integration.
@@ -114,6 +114,6 @@ While Hometown Hub is fully functional and production-ready, future iterations o
 
 ## 7. Conclusion
 
-Hometown Hub stands as a robust, production-ready digital platform that successfully bridges the gap between modern social networking and hyper-localized community building. From its stunning, responsive user interface to its highly secure, real-time backend architecture, the application meets and exceeds the rigorous standards of modern web development. 
+Zashub stands as a robust, production-ready digital platform that successfully bridges the gap between modern social networking and hyper-localized community building. From its stunning, responsive user interface to its highly secure, real-time backend architecture, the application meets and exceeds the rigorous standards of modern web development. 
 
 This project successfully demonstrates a profound, practical understanding of full-stack engineering, real-time data synchronization, cloud deployment strategies, and UI/UX design principles—marking a highly successful culmination of the Unified Mentor Internship Program.

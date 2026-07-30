@@ -36,7 +36,7 @@ export function HeroSection() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
           </span>
-          <span className="text-sm font-medium text-neutral-300">Hometown Hub 2.0 is live</span>
+          <span className="text-sm font-medium text-neutral-300">Zashub is live</span>
           <ArrowRight className="w-4 h-4 text-neutral-500 group-hover:text-neutral-300 transition-colors group-hover:translate-x-0.5" />
         </motion.div>
 
@@ -46,9 +46,9 @@ export function HeroSection() {
           transition={{ delay: 0.1, duration: 0.8, ease: 'easeOut' }}
           className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-white tracking-tighter leading-[1.1] max-w-5xl"
         >
-          Your Hometown, <br className="hidden sm:block" />
+          Discover Your City, <br className="hidden sm:block" />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 via-primary-300 to-accent-400">
-            Reconnected.
+            Connect Locally.
           </span>
         </motion.h1>
 
@@ -58,7 +58,7 @@ export function HeroSection() {
           transition={{ delay: 0.2, duration: 0.8, ease: 'easeOut' }}
           className="mt-8 text-lg md:text-xl text-neutral-400 max-w-2xl text-pretty leading-relaxed font-medium"
         >
-          The hyperlocal platform where neighbors become friends. Discover events, share updates, and solve local problems — all in one beautifully crafted space.
+          Zashub is a modern local community platform where people can discover places, events, businesses, services, jobs, local updates, and connect with their hometown community.
         </motion.p>
 
         <motion.div 

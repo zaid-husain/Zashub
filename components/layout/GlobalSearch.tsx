@@ -42,7 +42,7 @@ export default function GlobalSearch() {
           }}
           onFocus={() => setIsOpen(true)}
           className="block w-full pl-10 pr-10 py-2.5 border border-neutral-200 dark:border-neutral-800 rounded-2xl leading-5 bg-neutral-100 dark:bg-neutral-900 text-neutral-900 dark:text-white placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 sm:text-sm transition-all shadow-sm"
-          placeholder="Search Hometown Hub..."
+          placeholder="Search Zashub..."
         />
         {query && (
           <button 

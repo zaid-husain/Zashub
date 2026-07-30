@@ -1,12 +1,12 @@
 # Deployment Pre-Flight Checklist
 
-This document serves as the final checklist before taking Hometown Hub live.
+This document serves as the final checklist before taking Zashub live.
 
 ## 1. Environment Variables Validation
 Ensure the production platform (e.g., Vercel, Railway, AWS) contains all environment variables listed in `.env.example`. 
 - [ ] `MONGODB_URI` points to the Atlas cluster.
 - [ ] `JWT_SECRET` and `REFRESH_TOKEN_SECRET` are securely generated (e.g., via `openssl rand -hex 64`).
-- [ ] `FRONTEND_URL` exactly matches the production domain (e.g., `https://hometownhub.com`).
+- [ ] `FRONTEND_URL` exactly matches the production domain (e.g., `https://zashub.vercel.app`).
 - [ ] `NODE_ENV` is explicitly set to `production`.
 
 ## 2. Database Migration (Atlas)
@@ -23,6 +23,7 @@ Ensure the production platform (e.g., Vercel, Railway, AWS) contains all environ
 - **Backend (Railway/Render):** Make sure the root directory for the backend deployment is set to `/server`. Build command: `npm install && npm run build`. Start command: `npm start`.
 
 ## 5. Security & Verification
-- [ ] Run the health check endpoint: `GET https://api.hometownhub.com/health` to verify `dbState: "connected"`.
+- [ ] Run the health check endpoint: `GET https://api.zashub.com/health` to verify `dbState: "connected"`.
 - [ ] Confirm Cloudinary API keys are securely set and images render successfully via `next/image` domain mappings.
 - [ ] Perform a full E2E run (Register, Login, Create Community, Create Post, Comment).
+

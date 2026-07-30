@@ -24,13 +24,20 @@ const SecuritySection = dynamic(() => import('./sections/SecuritySection').then(
 const FAQSection = dynamic(() => import('./sections/FAQSection').then(m => ({ default: m.FAQSection })), {
   loading: () => <div className="py-32" />,
 });
+const MeetCreator = dynamic(() => import('./about/components/MeetCreator').then(m => ({ default: m.MeetCreator })), {
+  loading: () => <div className="py-32" />,
+});
 const FooterSection = dynamic(() => import('./sections/FooterSection').then(m => ({ default: m.FooterSection })), {
   loading: () => <div className="py-16" />,
 });
 
 export const metadata: Metadata = {
-  title: 'Hometown Hub — Connect With Your Community',
-  description: 'The hyperlocal platform where neighbors become friends. Share updates, organize events, preserve culture, and solve local problems.',
+  title: 'Zashub – Discover Places, Events & Local Community',
+  description:
+    'Discover nearby places, businesses, events, jobs, services and local updates with Zashub. Connect with your hometown community through one modern platform.',
+  alternates: {
+    canonical: '/',
+  },
 };
 
 export default function LandingPage() {
@@ -45,6 +52,7 @@ export default function LandingPage() {
 
       <FeaturesSection />
       <SecuritySection />
+      <MeetCreator />
       <FAQSection />
       <FooterSection />
     </main>
